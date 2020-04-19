@@ -1,0 +1,57 @@
+@import "./assets/scss/header";
+@import "./assets/scss/showdonuts";
+@import "./assets/scss/newsletter";
+@import "./assets/scss/variables";
+@import "./assets/scss/about";
+@import "./assets/scss/mixins";
+@import "./assets/scss/donuts";
+@import "./assets/scss/services";
+
+body {
+    // font-family: 'Comfortaa', cursive;
+    font-family:'Montserrat Alternates', sans-serif;
+    font-size: 15px;
+    line-height: 1.9;
+    padding: 0;
+    margin: 4px 0 0 0;
+    background-color: $colorBody;
+}
+// .container {
+//     width: 80%;
+//     margin: auto;
+    // overflow: hidden;
+// }
+ul {
+    margin: 0;
+    padding: 0;
+}
+.highlight {
+    font-weight: 900;
+    font-size: 40px;
+    color: $color4;
+}
+.current a{
+    color: $color4;
+    font-weight: 800;   
+}
+footer {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    p {
+        margin: 0;
+    }
+}
+@media(min-width: 700px) and (max-width: 960px){
+    footer{
+        font-size: 0.9em;
+    }  
+}
+  @media(max-width: 700px){
+    footer{
+        font-size: 0.8em;
+    }
+    .highlight{
+        font-size: 1em;
+    }
+}
